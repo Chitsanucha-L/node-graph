@@ -1,0 +1,89 @@
+/* Trigger (ตัวกดหลัก) */
+.dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 180px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #374151;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.dropdown-trigger:hover {
+  border-color: #9ca3af;
+}
+
+.dropdown-trigger:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.dropdown-icon {
+  margin-left: 6px;
+  color: #6b7280;
+}
+
+/* Content (กล่องรายการ) */
+.dropdown-content {
+  z-index: 300;
+  margin-top: 4px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Scroll buttons */
+.dropdown-scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  color: #6b7280;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.dropdown-scroll-btn:hover {
+  background: #f3f4f6;
+}
+
+/* Viewport */
+.dropdown-viewport {
+  padding: 4px;
+}
+
+/* Item */
+.dropdown-item {
+  min-width: 146px;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #374151;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-item:hover {
+  background: #eff6ff;
+  color: #2563eb;
+  outline: none;
+}
+
+.dropdown-item[data-state="checked"],
+.dropdown-item[data-state="focused"] {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
